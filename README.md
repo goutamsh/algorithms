@@ -2,22 +2,22 @@
 
 ## Sorting
 ### Heap sort
-[HeapSort Implementation](https://github.com/goutamsh/algorithms/blob/master/src/main/java/com/gshepur/sorting/heapsort/HeapSort.java)
+[HeapSort Implementation](https://github.com/goutamsh/algorithms/blob/master/src/main/java/com/gshepur/sorting/HeapSort.java)
 
-[HeapSort JUnit](https://github.com/goutamsh/algorithms/blob/master/src/test/java/com/gshepur/sorting/heapsort/HeapSortTest.java)
+[HeapSort JUnit](https://github.com/goutamsh/algorithms/blob/master/src/test/java/com/gshepur/sorting/HeapSortTest.java)
 
 Time Complexity : O(n log n)
 
 ### Selection sort
-[Selection sort Implementation](https://github.com/goutamsh/algorithms/blob/master/src/main/java/com/gshepur/sorting/heapsort/HeapSort.java)
+[Selection sort Implementation](https://github.com/goutamsh/algorithms/blob/master/src/main/java/com/gshepur/sorting/SelectionSort.java)
 
-[Selection sort JUnit](https://github.com/goutamsh/algorithms/blob/master/src/test/java/com/gshepur/sorting/heapsort/HeapSortTest.java)
+[Selection sort JUnit](https://github.com/goutamsh/algorithms/blob/master/src/test/java/com/gshepur/sorting/SelectionSortTest.java)
 
 Time Complexity : O(n * n)
 ### Insertion Sort
-[Insertion Sort Implementation](https://github.com/goutamsh/algorithms/blob/master/src/main/java/com/gshepur/sorting/heapsort/HeapSort.java)
+[Insertion Sort Implementation](https://github.com/goutamsh/algorithms/blob/master/src/main/java/com/gshepur/sorting/InsertionSort.java)
 
-[Insertion Sort JUnit](https://github.com/goutamsh/algorithms/blob/master/src/test/java/com/gshepur/sorting/heapsort/HeapSortTest.java)
+[Insertion Sort JUnit](https://github.com/goutamsh/algorithms/blob/master/src/test/java/com/gshepur/sorting/InsertionSortTest.java)
 
 Time Complexity : O(n * n)
 
