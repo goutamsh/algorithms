@@ -1,20 +1,63 @@
-package com.gshepur.sorting.heapsort;
+package com.gshepur.sorting;
 
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.Arrays;
 
-public class HeapSortTest {
+public class InsertionSortTest {
+
+    InsertionSort insertionSort = new InsertionSort();
+
+    @Test
+    public void sort0() {
+        int[] array = null;
+        System.out.println("Before array sorted : "+Arrays.toString(array));
+        insertionSort.sort(array);
+        System.out.println("After array sorted : "+Arrays.toString(array));
+
+        int[] expectedArray = null;
+        Assert.assertArrayEquals(expectedArray, array);
+    }
+
+    @Test
+    public void sort01() {
+        int[] array = new int[0];
+        System.out.println("Before array sorted : "+Arrays.toString(array));
+        insertionSort.sort(array);
+        System.out.println("After array sorted : "+Arrays.toString(array));
+
+        int[] expectedArray = new int[0];
+        Assert.assertArrayEquals(expectedArray, array);
+    }
+
+    @Test
+    public void sort02() {
+        int[] array = new int[]{2};
+        System.out.println("Before array sorted : "+Arrays.toString(array));
+        insertionSort.sort(array);
+        System.out.println("After array sorted : "+Arrays.toString(array));
+
+        int[] expectedArray = new int[]{2};
+        Assert.assertArrayEquals(expectedArray, array);
+    }
+
+    @Test
+    public void sort03() {
+        int[] array = new int[]{2,1};
+        System.out.println("Before array sorted : "+Arrays.toString(array));
+        insertionSort.sort(array);
+        System.out.println("After array sorted : "+Arrays.toString(array));
+
+        int[] expectedArray = new int[]{1,2};
+        Assert.assertArrayEquals(expectedArray, array);
+    }
 
     @Test
     public void sort1() {
-
-        HeapSort heapSort = new HeapSort();
-
         int[] array = new int[]{8,7,6,5,4,3,2};
         System.out.println("Before array sorted : "+Arrays.toString(array));
-        heapSort.sort(array);
+        insertionSort.sort(array);
         System.out.println("After array sorted : "+Arrays.toString(array));
 
         int[] expectedArray = new int[]{8,7,6,5,4,3,2};
@@ -24,10 +67,9 @@ public class HeapSortTest {
 
     @Test
     public void sort2() {
-        HeapSort heapSort = new HeapSort();
         int[] array = new int[]{1,1,1,2,2};
         System.out.println("Before array sorted : "+Arrays.toString(array));
-        heapSort.sort(array);
+        insertionSort.sort(array);
         System.out.println("After array sorted : "+Arrays.toString(array));
 
         int[] expectedArray = new int[]{1,1,1,2,2};
@@ -37,10 +79,9 @@ public class HeapSortTest {
 
     @Test
     public void sort3() {
-        HeapSort heapSort = new HeapSort();
         int[] array = new int[]{1,1,8,8,2,2,1,1};
         System.out.println("Before array sorted : "+Arrays.toString(array));
-        heapSort.sort(array);
+        insertionSort.sort(array);
         System.out.println("After array sorted : "+Arrays.toString(array));
 
         int[] expectedArray = new int[]{1,1,8,8,2,2,1,1};
@@ -50,10 +91,9 @@ public class HeapSortTest {
 
     @Test
     public void sort4() {
-        HeapSort heapSort = new HeapSort();
         int[] array = new int[]{1,1,8,8,2,2,1};
         System.out.println("Before array sorted : "+Arrays.toString(array));
-        heapSort.sort(array);
+        insertionSort.sort(array);
         System.out.println("After array sorted : "+Arrays.toString(array));
 
         int[] expectedArray = new int[]{1,1,8,8,2,2,1};
@@ -63,10 +103,9 @@ public class HeapSortTest {
 
     @Test
     public void sort5() {
-        HeapSort heapSort = new HeapSort();
         int[] array = new int[]{1,1,8,8,2,2};
         System.out.println("Before array sorted : "+Arrays.toString(array));
-        heapSort.sort(array);
+        insertionSort.sort(array);
         System.out.println("After array sorted : "+Arrays.toString(array));
 
         int[] expectedArray = new int[]{1,1,8,8,2,2};
@@ -76,10 +115,9 @@ public class HeapSortTest {
 
     @Test
     public void sort6() {
-        HeapSort heapSort = new HeapSort();
         int[] array = new int[]{1,1,8,8,2};
         System.out.println("Before array sorted : "+Arrays.toString(array));
-        heapSort.sort(array);
+        insertionSort.sort(array);
         System.out.println("After array sorted : "+Arrays.toString(array));
 
         int[] expectedArray = new int[]{1,1,8,8,2};
@@ -89,10 +127,9 @@ public class HeapSortTest {
 
     @Test
     public void sort7() {
-        HeapSort heapSort = new HeapSort();
         int[] array = new int[]{1,6,8,2};
         System.out.println("Before array sorted : "+Arrays.toString(array));
-        heapSort.sort(array);
+        insertionSort.sort(array);
         System.out.println("After array sorted : "+Arrays.toString(array));
 
         int[] expectedArray = new int[]{1,6,8,2};

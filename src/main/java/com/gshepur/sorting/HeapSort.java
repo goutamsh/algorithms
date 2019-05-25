@@ -1,24 +1,25 @@
-package com.gshepur.sorting.heapsort;
+package com.gshepur.sorting;
 
 public class HeapSort {
 
     public void sort(int[] array){
 
-        /**
-         * 1. Heapify an array (form Max heap)
-         *
-         * 2. for each element from last to 1 swap 0th element which is max with last element
-         *
-         * 3. percolate the root element all the way down to last-1
-         */
-        int size = array.length;
-        heapify(array);
+        if(array != null){
+            /**
+             * 1. Heapify an array (form Max heap)
+             *
+             * 2. for each element from last to 1 swap 0th element which is max with last element
+             *
+             * 3. percolate the root element all the way down to last-1
+             */
+            int size = array.length;
+            heapify(array);
 
-        for(int i = size - 1 ; i > 0 ; i--){
-            swap(array, 0, i);
-            percolateDown(array, 0, i);
+            for(int i = size - 1 ; i > 0 ; i--){
+                swap(array, 0, i);
+                percolateDown(array, 0, i);
+            }
         }
-
     }
 
     private void percolateDown(int[] array, int root, int size) {

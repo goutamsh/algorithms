@@ -10,7 +10,12 @@ public class BinarySearch {
      * @return index of the key if found in the array else -1
      */
     public int search(int[] array, int key){
-        return binarySearch(array, 0, array.length - 1, key);
+        if(array != null){
+            return binarySearch(array, 0, array.length - 1, key);
+        }else {
+            return -1;
+        }
+
     }
 
     private int binarySearch(int[] array, int from, int to, int key) {

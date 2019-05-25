@@ -6,10 +6,11 @@ import static org.junit.Assert.*;
 
 public class BinarySearchTest {
 
+    BinarySearch binarySearch = new BinarySearch();
+
     @Test
     public void search() {
 
-        BinarySearch binarySearch = new BinarySearch();
         int[] array = new int[]{1,2,3,4,5,6};
         assertEquals(-1, binarySearch.search(array, -11));
         assertEquals(0, binarySearch.search(array, 1));
@@ -24,7 +25,6 @@ public class BinarySearchTest {
     @Test
     public void search2() {
 
-        BinarySearch binarySearch = new BinarySearch();
         int[] array = new int[]{1,2,3,4,5,6,7};
         assertEquals(-1, binarySearch.search(array, -11));
         assertEquals(0, binarySearch.search(array, 1));
@@ -35,5 +35,13 @@ public class BinarySearchTest {
         assertEquals(5, binarySearch.search(array, 6));
         assertEquals(6, binarySearch.search(array, 7));
         assertEquals(-1, binarySearch.search(array, 8));
+    }
+
+    @Test
+    public void search3() {
+
+        int[] array = null;
+        assertEquals(-1, binarySearch.search(array, -11));
+        assertEquals(-1, binarySearch.search(array, 1));
     }
 }
