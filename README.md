@@ -13,11 +13,13 @@ Time Complexity : O(n log n)
 
 [Selection sort JUnit](https://github.com/goutamsh/algorithms/blob/master/src/test/java/com/gshepur/sorting/heapsort/HeapSortTest.java)
 
-
+Time Complexity : O(n * n)
 ### Insertion Sort
 [Insertion Sort Implementation](https://github.com/goutamsh/algorithms/blob/master/src/main/java/com/gshepur/sorting/heapsort/HeapSort.java)
 
 [Insertion Sort JUnit](https://github.com/goutamsh/algorithms/blob/master/src/test/java/com/gshepur/sorting/heapsort/HeapSortTest.java)
+
+Time Complexity : O(n * n)
 
 ## Searching
 ### Binary Search
